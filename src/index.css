@@ -11,6 +11,6 @@ body {
     background-color: #f4f2ed;
 }
 .up, .down {
-    background-image: url(public/assets/noise_lines.webp);
+    background-image: url(../public/assets/noise_lines.webp);
     background-repeat: repeat;
 }
