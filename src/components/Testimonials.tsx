@@ -40,7 +40,7 @@ const Testimonials = () => {
     {
       id: 5,
       name: "Rahul Sharma",
-      img: "/public/players/Rahul Sharma.jpg",
+      img: "/players/Rahul Sharma.jpg",
       content:
         "ProKick's unwavering dedication towards nurturing young talent has been nothing short of awe-inspiring. They meticulously sought out opportunities for me, eventually securing a position at one of Europe's most prestigious football clubs.",
       club: "Chelsea FC",
