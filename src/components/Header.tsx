@@ -20,9 +20,9 @@ const Header = () => {
     <>
       <Loader />
       <header
-        className={`fixed h-screen max-h-screen w-full max-w-screen bg-bg flex font-main items-start ${
-          layout === 2 ? "flex-row-reverse" : "flex-col"
-        }`}
+        className={`fixed h-dvh max-h-dvh w-full max-w-screen bg-bg flex font-main items-start pb-1 ${
+   layout === 2 ? "flex-row-reverse" : "flex-col"
+ }`}
       >
         <div
           className={`relative flex ${

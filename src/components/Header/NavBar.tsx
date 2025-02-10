@@ -19,7 +19,8 @@ const NavBar = ({ currentLayout }: NavBarProps) => {
             currentLayout === 2 ? "flex-col items-end gap-6" : "flex-row gap-8"
           }`}
         >
-          <motion.li
+          <motion.a
+            href="#about"
             className="relative cursor-pointer text-main hover:text-alt ease-in duration-300 transition"
             onHoverStart={() => setIsActiveMenu({ name: "about", state: true })}
             onHoverEnd={() => setIsActiveMenu({ name: "", state: false })}
@@ -33,8 +34,9 @@ const NavBar = ({ currentLayout }: NavBarProps) => {
               }
               className="absolute bottom-1 right-0 w-full h-[2px] bg-main"
             ></motion.div>
-          </motion.li>
-          <motion.li
+          </motion.a>
+          <motion.a
+            href="#work"
             className="relative cursor-pointer text-main hover:text-alt ease-in duration-300 transition-all"
             onHoverStart={() => setIsActiveMenu({ name: "work", state: true })}
             onHoverEnd={() => setIsActiveMenu({ name: "", state: false })}
@@ -48,8 +50,9 @@ const NavBar = ({ currentLayout }: NavBarProps) => {
               }
               className="absolute bottom-1 right-0 w-full h-[2px] bg-main"
             ></motion.div>
-          </motion.li>
-          <motion.li
+          </motion.a>
+          <motion.a
+            href="#testimonials"
             className="relative cursor-pointer text-main hover:text-alt ease-in duration-300 transition-all"
             onHoverStart={() =>
               setIsActiveMenu({ name: "testimonials", state: true })
@@ -65,8 +68,9 @@ const NavBar = ({ currentLayout }: NavBarProps) => {
               }
               className="absolute bottom-1 right-0 w-full h-[2px] bg-main"
             ></motion.div>
-          </motion.li>
-          <motion.li
+          </motion.a>
+          <motion.a
+            href="#contact"
             className="relative cursor-pointer text-main hover:text-alt ease-in duration-300 transition-all"
             onHoverStart={() =>
               setIsActiveMenu({ name: "contact", state: true })
@@ -82,7 +86,7 @@ const NavBar = ({ currentLayout }: NavBarProps) => {
               }
               className="absolute bottom-1 right-0 w-full h-[2px] bg-main"
             ></motion.div>
-          </motion.li>
+          </motion.a>
         </ul>
       </nav>
     </>

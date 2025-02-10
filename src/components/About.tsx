@@ -31,8 +31,11 @@ const About = () => {
     clamp: false,
   });
   return (
-    <div className="relative top-[100vh] font-main">
-      <section ref={targetRef} className="relative h-[400vh] md:h-[300vh] bg-main p-5">
+    <div id="about" className="relative top-[100dvh] font-main">
+      <section
+        ref={targetRef}
+        className="relative h-[500dvh] md:h-[300dvh] bg-main p-5"
+      >
         <div className="sticky top-0 left-0 flex w-full h-screen items-center justify-center overflow-hidden scroll-smooth">
           <div className="flex w-[90%] max-w-[900px] items-center justify-center">
             <motion.div

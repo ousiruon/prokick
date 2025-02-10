@@ -62,7 +62,8 @@ const Work = () => {
     <motion.div
       onViewportEnter={() => setDisplayed(true)}
       onViewportLeave={() => setDisplayed(false)}
-      className="relative top-[100vh] z-40 bg-bg flex flex-col font-main text-main pb-20"
+      id="work"
+      className="relative top-[100dvh] z-40 bg-bg flex flex-col font-main text-main pb-20"
     >
       <WorkUp displayed={displayed} />
       <WorkContent data={workContent} />

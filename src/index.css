@@ -7,6 +7,9 @@
     --color-alt: #7b849b;
     --color-sec: #ff6542;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #f4f2ed;
 }

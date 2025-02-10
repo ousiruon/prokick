@@ -10,7 +10,8 @@ const Footer = () => {
       <motion.footer
         onViewportEnter={() => setDisplayed(true)}
         onViewportLeave={() => setDisplayed(false)}
-        className="relative top-[100vh] font-main bg-bg"
+        id="contact"
+        className="relative top-[100dvh] font-main bg-bg"
       >
         <Contact displayed={displayed} />
         <SubContact />

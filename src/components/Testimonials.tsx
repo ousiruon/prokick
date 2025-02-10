@@ -55,7 +55,10 @@ const Testimonials = () => {
   };
   return (
     <>
-      <div className="relative top-[100vh] min-h-[100vh] p-10 z-40 flex flex-col items-center justify-center font-main bg-main text-bg">
+      <div
+        id="testimonials"
+        className="relative top-[100dvh] min-h-[100dvh] p-10 z-40 flex flex-col items-center justify-center font-main bg-main text-bg"
+      >
         <div className="w-9/12 max-w-[1500px] opacity-70">
           {currentStep === 1 && (
             <FirstStep testimonials={testimonials} updateData={updateData} />
