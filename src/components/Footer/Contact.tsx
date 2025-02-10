@@ -150,10 +150,10 @@ const Contact = ({ displayed }: { displayed: boolean }) => {
             >
               <IoClose size={24} />
             </motion.div>
-            <div className="text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl w-full">
+            <div className="text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl w-full text-center">
               Thank you {currentUsername}!
             </div>
-            <div className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl w-full">
+            <div className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl w-full text-center">
               Your message is on its way. 😊
             </div>
           </motion.div>
