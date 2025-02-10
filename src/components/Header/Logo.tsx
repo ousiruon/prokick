@@ -25,8 +25,11 @@ const Logo = ({ currentLayout }: LogoProps) => {
             : "py-2 sm:py-8 w-full sm:w-[50%] px-4  justify-center sm:items-start sm:justify-start text-7xl 2xl:text-9xl xl:text-8xl"
         }`}
       >
-        <div className="firstPart">Pro</div>
+        <div onClick={() => window.location.reload()} className="firstPart">
+          Pro
+        </div>
         <motion.div
+          onClick={() => window.location.reload()}
           variants={kickAnimate}
           animate="animate"
           className="secondPart"
