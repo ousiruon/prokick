@@ -11,7 +11,7 @@ const Footer = () => {
         onViewportEnter={() => setDisplayed(true)}
         onViewportLeave={() => setDisplayed(false)}
         id="contact"
-        className="relative top-[100dvh] font-main bg-bg"
+        className="relative top-[100dvh] min-h-[100dvh] flex flex-col items-center justify-center font-main bg-bg"
       >
         <Contact displayed={displayed} />
         <SubContact />

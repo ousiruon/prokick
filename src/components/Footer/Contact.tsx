@@ -141,7 +141,7 @@ const Contact = ({ displayed }: { displayed: boolean }) => {
           <motion.div
             initial={{ x: "100vw" }}
             animate={isSubmited ? { x: 0 } : {}}
-            className="relative min-h-[400px] w-full flex flex-col justify-center items-center mb-20 gap-10"
+            className="relative w-full flex flex-col justify-center items-center mb-20 gap-10"
           >
             <motion.div
               whileHover={{ rotate: "180deg", transition: { duration: 0.5 } }}
