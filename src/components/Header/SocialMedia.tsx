@@ -1,7 +1,13 @@
 import { motion } from "motion/react";
 import { useState } from "react";
+// SocialMedia component that displays social media links with hover effects.
+// The component contains three links: Instagram, LinkedIn, and Email.
+// Each link has a hover effect that animates a line under the text.
 const SocialMedia = () => {
-  const [isActiveSocial, setIsActiveSocial] = useState({
+  const [isActiveSocial, setIsActiveSocial] = useState<{
+    name: string;
+    state: boolean;
+  }>({
     name: "",
     state: false,
   });

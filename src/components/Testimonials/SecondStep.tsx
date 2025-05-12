@@ -3,13 +3,17 @@ import { TestimonialsProps } from "./FirstStep";
 import { IoClose } from "react-icons/io5";
 import { GrPrevious } from "react-icons/gr";
 import { GrNext } from "react-icons/gr";
-
+// Interface SecondStepProps is an interface that defines the props for the SecondStep component.
 interface SecondStepProps {
   testimonial: TestimonialsProps;
   currentPlayer: number;
   testimonialsLength: number;
   updateData: (step: number, player: number) => void;
 }
+// Component SecondStep is a functional component that displays the details of a selected testimonial.
+// It takes testimonial, currentPlayer, testimonialsLength, and updateData as props.
+// The component displays the testimonial's image, name, content, and club.
+// It also includes navigation buttons to switch between testimonials.
 const SecondStep = ({
   testimonial,
   currentPlayer,

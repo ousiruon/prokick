@@ -1,10 +1,17 @@
 import { motion } from "motion/react";
 import { useState } from "react";
+//Interface NavBarProps is an interface that defines the props for the NavBar component.
 interface NavBarProps {
   currentLayout: number;
 }
+// NavBar component is a functional component that displays the navigation bar of the application.
+// It takes currentLayout as a prop to determine the layout of the navigation bar.
+// The navigation bar contains links to different sections of the application: About, Work, Testimonials, and Contact.
 const NavBar = ({ currentLayout }: NavBarProps) => {
-  const [isActiveMenu, setIsActiveMenu] = useState({ name: "", state: false });
+  const [isActiveMenu, setIsActiveMenu] = useState<{
+    name: string;
+    state: boolean;
+  }>({ name: "", state: false });
   return (
     <>
       <nav

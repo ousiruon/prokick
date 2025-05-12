@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+// Loader component that animates the title "ProKick" with a top and bottom sliding effect.
 const Loader = () => {
   const headerVariants = {
     topSideInitial: {
@@ -27,7 +28,7 @@ const Loader = () => {
       opacity: 1,
     },
   };
-  const titleArray = ["P", "r", "o", "K", "i", "c", "k"];
+  const titleArray: string[] = ["P", "r", "o", "K", "i", "c", "k"];
   return (
     <>
       <motion.div

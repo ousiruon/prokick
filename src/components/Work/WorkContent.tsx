@@ -2,9 +2,11 @@ import { motion, useScroll } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { workContentProps } from "../Work";
 import { useTransform } from "motion/react";
+// WorkContent component is a functional component that displays a list of work sections.
+// It takes data as a prop, which is an array of workContentProps.
 const WorkContent = ({ data }: { data: workContentProps[] }) => {
-  const [workActive, setWorkActive] = useState(false);
-  const [fixedDivs, setFixedDivs] = useState<any>([]);
+  const [workActive, setWorkActive] = useState<boolean>(false);
+  const [fixedDivs, setFixedDivs] = useState<number[]>([]);
   const lastScrollY = useRef(0);
 
   useEffect(() => {

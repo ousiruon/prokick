@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { useState } from "react";
 import { MdArrowRightAlt } from "react-icons/md";
+// Interface TestimonialsProps is an interface that defines the structure of a testimonial object.
 export interface TestimonialsProps {
   id: number;
   name: string;
@@ -8,12 +9,14 @@ export interface TestimonialsProps {
   content: string;
   club: string;
 }
+// Interface FirstStepProps is an interface that defines the props for the FirstStep component.
 interface FirstStepProps {
   testimonials: TestimonialsProps[];
   updateData: (step: number, player: number) => void;
 }
+// FirstStep component is a functional component that displays a list of user names and their personal pictures. Once clicked it redirects to SecondStep component.
 const FirstStep = ({ testimonials, updateData }: FirstStepProps) => {
-  const [activeTestimonial, setActiveTestimonial] = useState({
+  const [activeTestimonial, setActiveTestimonial] = useState<{id:number; hovered: boolean}>({
     id: 0,
     hovered: false,
   });

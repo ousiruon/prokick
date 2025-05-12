@@ -1,3 +1,4 @@
+// This component displays the current year in a specific format. It is used in the header and the footer of the website.
 const Year = () => {
   return (
     <>

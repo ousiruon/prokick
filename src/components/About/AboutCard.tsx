@@ -3,15 +3,18 @@ import { useState } from "react";
 import AboutWelcomeSvg from "./AboutWelcomeSvg";
 import AboutDirectionSvg from "./AboutDirectionSvg";
 import AboutStartSvg from "./AboutStartSvg";
-
+// Interface for the about card data
 export interface CardType {
   title: string;
   content: string;
   id: number;
 }
+// AboutCard component
+// This component displays a card with an SVG and text content
+// It uses Framer Motion for animations and transitions
 const AboutCard = ({ card }: { card: CardType }) => {
-  const [titleShown, setTitleShown] = useState(false);
-  const [isActive, setIsActive] = useState(false);
+  const [titleShown, setTitleShown] = useState<boolean>(false);
+  const [isActive, setIsActive] = useState<boolean>(false);
   return (
     <motion.div className="flex flex-col sm:flex-row items-center justify-center sm:justify-baseline bg-bg rounded-4xl px-3 sm:p-6 sm:gap-5 min-w-[100%] w-[100%] 2xl:text-4xl xl:text-3xl lg:text-2xl">
       <div className="w-full sm:w-2/4 px-6 sm:px-4 text-alt">

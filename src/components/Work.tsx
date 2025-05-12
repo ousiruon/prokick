@@ -2,12 +2,14 @@ import { motion } from "motion/react";
 import WorkContent from "./Work/WorkContent";
 import WorkUp from "./Work/WorkUp";
 import { useState } from "react";
+//Interface of the content displayed in work section
 export interface workContentProps {
   ID: number;
   Title: string;
   Subtitle: string;
   Content: string[];
 }
+//The content displayed in work section
 const workContent: workContentProps[] = [
   {
     ID: 1,
@@ -55,9 +57,9 @@ const workContent: workContentProps[] = [
     ],
   },
 ];
-
+//Work component where each section is shown in a 3D perspective way
 const Work = () => {
-  const [displayed, setDisplayed] = useState(false);
+  const [displayed, setDisplayed] = useState<boolean>(false);
   return (
     <motion.div
       onViewportEnter={() => setDisplayed(true)}

@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+// Ball SVG component
 const Ball = () => {
   return (
     <>

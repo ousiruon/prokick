@@ -6,12 +6,14 @@ import Year from "./Header/Year";
 import Loader from "./Header/Loader";
 import MainIcon from "./Header/MainIcon";
 import LayoutPicker from "./Header/LayoutPicker";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+// Header component
 const Header = () => {
-  useEffect(() => {});
-  const [layout, setLayout] = useState(
+  //Check if a specific layout for the header is saved in local storage
+  const [layout, setLayout] = useState<number>(
     localStorage.getItem("layout") ? Number(localStorage.getItem("layout")) : 1
   );
+  //If header layout is changed save it in local storage as well
   const updateLayout = (e: number) => {
     localStorage.setItem("layout", e.toString());
     setLayout(e);

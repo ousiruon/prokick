@@ -1,8 +1,11 @@
 import { motion } from "motion/react";
-
+// Interface for the props of the AboutDirectionSvg component
 interface AboutDirectionSvgProps {
   isActive: boolean;
 }
+// This component displays an SVG with animations
+// It uses Framer Motion for animations and transitions
+// The SVG represents a character and some elements related to the "Direction" section
 const AboutDirectionSvg = ({ isActive }: AboutDirectionSvgProps) => {
   return (
     <svg
@@ -172,7 +175,19 @@ const AboutDirectionSvg = ({ isActive }: AboutDirectionSvgProps) => {
               fill="currentColor"
               transform-origin="center"
               initial={{ rotate: 180 }}
-              animate={isActive ? { rotate: [180, 0], transition: {delay: 0.3, duration: 0.5, type:"spring", stiffness:50} } : {}}
+              animate={
+                isActive
+                  ? {
+                      rotate: [180, 0],
+                      transition: {
+                        delay: 0.3,
+                        duration: 0.5,
+                        type: "spring",
+                        stiffness: 50,
+                      },
+                    }
+                  : {}
+              }
             />
           </g>
           <g transform="translate(290 260)">
@@ -183,7 +198,19 @@ const AboutDirectionSvg = ({ isActive }: AboutDirectionSvgProps) => {
               fill="#e6e6e6"
               transform-origin="center"
               initial={{ rotate: 180 }}
-              animate={isActive ? { rotate: [0, -200], transition: {delay: 0.6, duration: 0.5, type:"spring", stiffness:50} } : {}}
+              animate={
+                isActive
+                  ? {
+                      rotate: [0, -200],
+                      transition: {
+                        delay: 0.6,
+                        duration: 0.5,
+                        type: "spring",
+                        stiffness: 50,
+                      },
+                    }
+                  : {}
+              }
             />
           </g>
           <g transform="translate(290 290)">
@@ -193,7 +220,19 @@ const AboutDirectionSvg = ({ isActive }: AboutDirectionSvgProps) => {
               d="M877.687,418.638H737.3a4.836,4.836,0,0,1-2.369-.622l-36.316-20.478a4.824,4.824,0,0,1,.019-8.415l36.306-20.261a4.834,4.834,0,0,1,2.351-.612h140.4a4.83,4.83,0,0,1,4.824,4.824v40.739a4.83,4.83,0,0,1-4.824,4.824Z"
               fill="#e6e6e6"
               initial={{ rotate: 180 }}
-              animate={isActive ? { rotate: [0, -210], transition: {delay: 0.9, duration: 0.5, type:"spring", stiffness:50} } : {}}
+              animate={
+                isActive
+                  ? {
+                      rotate: [0, -210],
+                      transition: {
+                        delay: 0.9,
+                        duration: 0.5,
+                        type: "spring",
+                        stiffness: 50,
+                      },
+                    }
+                  : {}
+              }
             />
           </g>
           <g

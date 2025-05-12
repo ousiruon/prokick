@@ -1,5 +1,6 @@
 import Logo from "../Header/Logo";
-
+// This component is used to display the contact information in the footer of the website
+// It includes the company logo and the address information.
 const SubContact = () => {
   return (
     <>

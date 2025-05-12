@@ -1,8 +1,12 @@
 import { motion } from "motion/react";
-
+// Interface for the props of the AboutWelcomeSvg component
 interface AboutWelcomeSvgProps {
   isActive: boolean;
 }
+// AboutWelcomeSvg component
+// This component renders an SVG animation for the "Welcome" section of the about page
+// It uses Framer Motion for animations and transitions
+// The SVG represents a character and some elements related to the "Welcome" section
 const AboutWelcomeSvg = ({ isActive }: AboutWelcomeSvgProps) => {
   return (
     <svg

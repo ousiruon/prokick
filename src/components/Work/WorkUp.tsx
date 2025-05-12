@@ -1,8 +1,10 @@
 import { AnimatePresence, motion } from "motion/react";
+// Interface for the WorkUpContent constant
 interface WorkUpContentProps {
   id: number;
   content: string;
 }
+// WorkUpContent constant is an array of objects that is displayed at the start of the work section.
 const WorkUpContent: WorkUpContentProps[] = [
   {
     id: 1,

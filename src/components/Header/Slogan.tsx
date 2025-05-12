@@ -1,9 +1,10 @@
 import { motion } from "motion/react";
-
+// Solgan component that displays a slogan with animated text.
+// The slogan is split into words, and certain words are animated to scale up and change opacity when hovered over.
 const Slogan = () => {
-  const slogan =
+  const slogan: string =
     "Unleashing Raw Talent, Dominating the Game, and Turning Rising Stars, Into Football Legends!";
-  const sloganArrayed = slogan.split(" ");
+  const sloganArrayed: string[] = slogan.split(" ");
   return (
     <>
       <div className="font-bold text-base 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl font-title text-alt px-4 md:px-12 h-8/10 flex flex-col justify-center">

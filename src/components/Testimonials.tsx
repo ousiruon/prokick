@@ -1,9 +1,11 @@
 import { useState } from "react";
 import FirstStep, { TestimonialsProps } from "./Testimonials/FirstStep";
 import SecondStep from "./Testimonials/SecondStep";
+//Testimonials component
 const Testimonials = () => {
-  const [currentStep, setCurrentStep] = useState(1);
-  const [currentPlayer, setCurrentPlayer] = useState(0);
+  //Current Step in testimonials, if it's one it mean all names are shown, if it is two, then one specific player details are shown based on "currentPlayer" number
+  const [currentStep, setCurrentStep] = useState<number>(1);
+  const [currentPlayer, setCurrentPlayer] = useState<number>(0);
   const testimonials: TestimonialsProps[] = [
     {
       id: 1,
@@ -46,7 +48,7 @@ const Testimonials = () => {
       club: "Chelsea FC",
     },
   ];
-
+  //On click on a player name, update current step and current player
   const updateData = (step: number, player: number) => {
     setCurrentStep(step);
     if (currentPlayer <= testimonials.length) {

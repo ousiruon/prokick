@@ -1,7 +1,13 @@
 import Ball from "./Ball";
+//Interface for MainIcon component
 interface MainIconProps {
   currentLayout: number;
 }
+// MainIcon component
+// This component displays an SVG icon representing a junior player.
+// It takes currentLayout as a prop to determine the layout of the icon.
+// The icon consists of various SVG paths and shapes that create the image of a player.
+// The component uses the Ball component to display a ball in the icon.
 const MainIcon = ({ currentLayout }: MainIconProps) => {
   return (
     <>

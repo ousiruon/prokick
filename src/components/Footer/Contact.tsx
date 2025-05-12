@@ -1,11 +1,14 @@
 import { motion } from "motion/react";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
-
+// This component is a contact form that allows users to send messages.
+// It uses the Framer Motion library for animations and the IoClose icon from react-icons.
+// The form includes fields for name, email, and message, and displays a thank you message upon submission.
+// The component uses React hooks to manage the state of the form and the submission process.
 const Contact = ({ displayed }: { displayed: boolean }) => {
-  const [labelHover, setLabelHover] = useState(0);
-  const [buttonHover, setButtonHover] = useState(0);
-  const [isSubmited, setIsSubmited] = useState(false);
+  const [labelHover, setLabelHover] = useState<number>(0);
+  const [buttonHover, setButtonHover] = useState<number>(0);
+  const [isSubmited, setIsSubmited] = useState<boolean>(false);
   const [currentUsername, setCurrentUsername] = useState<string | null>(null);
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -24,7 +27,6 @@ const Contact = ({ displayed }: { displayed: boolean }) => {
       setCurrentUsername(nameInput.value);
     }
   };
-
   return (
     <>
       <motion.div className="flex flex-col py-30 items-center justify-center w-[90%] max-w-[1500px] mx-auto text-main">

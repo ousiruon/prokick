@@ -1,4 +1,5 @@
 import { FaHeart } from "react-icons/fa";
+// This component displays a copyright notice with a heart icon.
 const Copyright = () => {
   return (
     <div className="w-full bg-main text-bg flex items-center justify-between py-4 px-2">

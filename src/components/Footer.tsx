@@ -3,6 +3,7 @@ import Contact from "./Footer/Contact";
 import { motion } from "motion/react";
 import SubContact from "./Footer/SubContact";
 import Copyright from "./Footer/Copyright";
+//Footer component
 const Footer = () => {
   const [displayed, setDisplayed] = useState(false);
   return (

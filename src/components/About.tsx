@@ -1,6 +1,8 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import AboutCard, { CardType } from "./About/AboutCard";
+// Interface for the card type
+// CardType is an interface that defines the structure of a card object.
 const cards: CardType[] = [
   {
     title: "Welcome to ProKick",
@@ -21,6 +23,7 @@ const cards: CardType[] = [
     id: 3,
   },
 ];
+// About component is a functional component that displays the about section of the application.
 const About = () => {
   const targetRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({

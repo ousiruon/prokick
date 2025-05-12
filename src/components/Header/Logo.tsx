@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+// kickAnimate is an animation object for the logo component.
 const kickAnimate = {
   animate: {
     scale: 1.05,
@@ -10,9 +11,14 @@ const kickAnimate = {
     },
   },
 };
+// Interface LogoProps is an interface that defines the props for the Logo component.
 interface LogoProps {
   currentLayout: number;
 }
+// Logo component is a functional component that displays the logo of the application.
+// It takes currentLayout as a prop to determine the layout of the logo.
+// The logo consists of two parts: "Pro" and "Kick", which are styled differently based on the currentLayout prop.
+// The component uses the motion library to animate the "Kick" part of the logo.
 const Logo = ({ currentLayout }: LogoProps) => {
   return (
     <>
